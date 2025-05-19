@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images (1).png">
+</head>
+<body style="background-image: url(images\ \(16\).jpeg);">
+    <div class="container">
+        <div class="header">
+            <img src="images (1).png" height="200px" width="200px" alt="">
+            <h1>Tech Skill Vocational Institute</h1>
+            
+          </div>
+        <h1>Test No 2</h1>
+        <div class="name-section">
+            <label for="studentName"><span style="color: rgb(19, 94, 9); font-weight: bolder;">Enter your name:</span></label>
+            <input type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Display Student's Name -->
+        <p id="displayName"></p>
+
+        <!-- Question 1 (Yes/No using checkboxes) -->
+        <div class="question">
+            <p>1. In supervised learning, what is the main difference between a feature and a label?</p>
+            <input type="checkbox" id="artificialIntelligence" value="Artificial intelligence">
+            <label for="artificialIntelligence">Labels are predicted; features are input data</label>
+            
+            <input type="checkbox" id="articalIntelligent" value="Artical Intelligent">
+            <label for="articalIntelligent">Features are predicted; labels are input data</label>
+        </div>
+        
+        <!-- Question 2 (Dropdown) -->
+        <div class="question">
+            <p>2.In a machine learning dataset for predicting house prices, which of the following is a label?</p>
+            <select id="question2">
+                <option value="">--Select an answer--</option>
+                <option value="Agriculture">Number of bedrooms</option>
+                <option value="Medical">Size in square feet</option>
+                <option value="Weather forecast">Location</option>
+                <option value="Both a,b & c">House price</option>
+            </select>
+        </div>
+          <!-- Question 3 (Dropdown) -->
+        <!-- Question 1 (Multiple Choice) -->
+<div class="question">
+    <p>3. Which of the following is typically not an output of an object detection model?</p>
+    <input type="radio" id="computerVision" name="workloadAI" value="Computer Vision">
+    <label for="computerVision"> Image resolution</label>
+    
+    <input type="radio" id="machineLearning" name="workloadAI" value="Machine Learning">
+    <label for="machineLearning">Bounding box coordinates</label>
+    
+    <input type="radio" id="regression" name="workloadAI" value="Regression">
+    <label for="regression">Object confidence score</label>
+</div>
+
+ <!-- Question 4 (Checkboxes) -->
+
+ <div class="question">
+    <p>4.-------is a form of computer vision in which the model is trained to identify the location of specific objects in an image?</p>
+    <input type="radio" id="label" name="train" value="label">
+    <label for="label">Object detection</label>
+    
+    <input type="radio" id="feature" name="train" value="feature">
+    <label for="feature">Semantic segmentation</label>
+    
+    <input type="radio" id="dataset" name="train" value="dataset">
+    <label for="dataset">Image classification </label>
+</div>
+
+<div class="question">
+    <p>5. <img src="image.png" height="100px" width="200px" alt="">
+    Find True Positive? </p>
+    <select id="question5">
+        <option value="">--Select an answer--</option>
+        <option value="Regression">32</option>
+        <option value="Binary Classification">45</option>
+        
+        <option value="Both a,b & c">56</option>
+    </select>
+</div>
+<div class="question">
+    <p>6. Select the two type of Machine Learning?</p>
+    <input type="checkbox" id="typeRegression" value="Regression">
+    <label for="typeRegression">Regression</label>
+    
+    <input type="checkbox" id="typesupervisedlearning" value="Supervised Learning">
+    <label for="typesupervisedlearning">Supervised Learning</label>
+    
+    <input type="checkbox" id="typeunsupervisedlearning" value="Unsupervised Learning">
+    <label for="typeunsupervisedlearning">UnSupervised Learning</label>
+    
+    
+</div>
+
+<div class="question">
+    <p>7. <img src="face.png" height="100px" width="200px" alt=""> <br> 
+        Which technique of computer vision used in above picture? </p>
+    <select id="question7">
+        <option value="">--Select an answer--</option>
+        <option value="feature">Face Detection</option>
+        
+        <option value="label">Object detection</option>
+    </select>
+</div>
+<div class="question">
+    <p>8. <img src="ocr.png" height="100px" width="200px"  alt=""> <br> which technique used in above image? </p>
+    <select id="question8">
+        <option value="">--Select an answer--</option>
+        <option value="feature">OCR</option>
+        
+        <option value="label">Image Analysis</option>
+    </select>
+</div>
+<div class="question">
+    <p>9. <img src="analysis.png" height="100px" width="200px" alt="">. <br> Which technique of computer vision used in above image? </p>
+    <input type="radio" id="artificiallife" name="AI" value="artificiallife">
+    <label for="artificiallife">Image classification</label>
+    
+    <input type="radio" id="human" name="AI" value="human">
+    <label for="human">Image Analysis</label>
+    
+    
+</div>
+<div class="question">
+    <p>10. What is an image made up of in a computer system? </p>
+    <input type="radio" id="stylar" name="images" value="stylar">
+    <label for="stylar">Pixels</label>
+    
+    <input type="radio" id="Elevenlabs" name="images" value="Elvenlabs">
+    <label for="Elevenlabs">Codes</label>
+    
+    
+</div>
+<br><br>
+
+        
+        <button onclick="checkAnswers()">submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
